@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e âncoras</title>
+</head>
+<body>
+    <h1>Links externos</h1>
+    <p>É possível criar links externos utilizando a tag A!</p>
+    <p>Por exemplo: Para acessar o meu github, <a href="https://github.com/JadielSilva11">clique aqui</a>!
+    </p>
+    <p>Porém, o link acima sobrescreve o site atual. Para abrir o link em outra aba é necessário utilizar os parâmetros: <code>target="_blank"</code> e <code>rel="external".</code></p>
+    <p>Por exemplo: Para acessar o meu linkedin, <a href="https://www.linkedin.com/in/jadiel-silva-7624b1322/" target="_blank" ref="external">clique aqui</a>!</p>
+
+    <p>Para links de patrocínio ou empresas/matérias que você não tem relação ou não garante que é "confiável", é importante utilizar dentro da tag A o parâmetrio <code>rel="nofollow"</code></p>
+    <p>Por exemplo: Para entrar no site do mercado livre, <a href="https://mercadolivre.com.br" target="_blank" rel="nofollow">clique aqui</a>!</p>
+
+    <h1>Links internos</h1>
+    <p>Links internos são utilizados para navegar para páginas dentro do próprio site.</p>
+    <p>Para criar links internos utiliza-se a mesma tag A, mas no lugar de um link para um site, basta colocar o caminho para a página.</p>
+    <p>Para navegar para a segunda página deste site, <a href="pag02.html" rel="next">clique aqui</a>!</p>
+
+    <h1>Links para downloads</h1>
+    <p>É possível criar links para downloads utilizando a mesma tag A junto dos parâmetros <code>download="nome_do_arquivo"</code> e <code>type="tipo_do_arquivo"</code>.</p>
+    <p>Para descobrir como declarar o tipo do arquivo, acesse: <a href="https://www.iana.org/assignments/media-types" target="_blank" ref="external">iana.org</a>
+    <p>Exemplos:</p>
+    <ul type="disc">
+        <li><a href="arquivos/Trabalho final - IHC.pdf" download="Protótipo IHC nike" type="application/pdf">Baixe em PDF</a></li>
+        <li><a href="arquivos/Trabalho final - IHC.pdf.zip" donwload="Protótipo IHC nike compactado" type="application/zip">Baixe em ZIP</a></li>
+    </ul>
+    
+</body>
+</html>

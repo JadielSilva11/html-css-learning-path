@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatações</title>
+</head>
+<body>
+    <h1>Código fonte / Pré-formatação</h1>
+    <p>É possível formatar um texto escrito em linguagem de programação com a tag CODE.</p>
+    <p>Por exemplo: O comando <code>system.out.println("Teste")</code> é escrito em Java.</p>
+
+    <p>A TAG code sozinha não identa o texto, apenas formata ele de uma maneira diferente.</p>
+    <p>Para códigos maiores é possível identar o texto envelopando a tag CODE com a tag PRE. Por exemplo:</p>
+    <pre>
+        <code>
+    #include &lt;stdio.h&gt;
+    
+    int main(){
+        int num = 10;
+        
+        if(num % 2 == 0){
+            printf("O numero %d é par!", num);
+        }else{
+            printf("O numero %d é ímpar!", num);
+        }
+
+        return 0;
+    }
+        </code>
+</pre>
+    <p>O código acima está escrito em linguagem C e verifica se um número é ímpar ou par.</p>
+
+    <h2>Citações</h2>
+    <p>Podemos <q>destacar uma citação</q> sem quebra de linha com a tag Q.</p>
+    <p>Para citações maiores é utilizado a tag BLOCKQUOTE que pode ser combinada com o parâmetro CITE onde pode ser inserido o link de onde a citação foi retirada, o link não aparece visualmente ao usuário, serve apenas para o navegador reconhecer de onde é aquela citação.</p>
+    <p>Exemplo: Segundo Manuel Castells (1942), sociólogo espanhol:</p>
+    <blockquote cite="https://www.todamateria.com.br/citacoes-para-redacao/">
+        A internet é muito mais que uma tecnologia. É um meio de comunicação, de interação e de organização social.
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Podemos envelopar uma sigla <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> com a tag ABBR para que o usuário saiba o significado dela passando o mouse por cima.</p>
+</body>
+</html>
