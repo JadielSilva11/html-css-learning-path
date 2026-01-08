@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio em HTML</title>
+</head>
+<body>
+    <h1>Reproduzindo áudios</h1>
+    <h2>Forma mais simples</h2>
+    <p>
+        A forma mais simples de adicionar áudios no site é com a Tag &lt;audio&gt;!
+    </p>
+    <p>
+        É possível adicionar o botão de play, tempo da música e botão de configurações com o parâmetro <code>'controls'</code> dentro da Tag &lt;audio&gt;!
+    </p>
+    <p>
+        Também é possível fazer com que a música inicie automaticamente no momento em que abrir o site com o parâmetro <code>autoplay</code> dentro da Tag &lt;audio&gt;!
+    </p>
+    <p>
+        Também existe o parâmetro <code>'preload'</code> que pode ser usado de três maneiras dentro da Tag &lt;audio&gt;:
+    </p>
+    <ul>
+        <li>
+            <code>preload='auto'</code>(menos utilizado): Durante o carregamento do site também será carregado a música inteira, mas pode fazer o site demorar mais para carregar.
+        </li>
+        <li>
+            <code>preload='metadata'</code>(mais utilizado): Durante o carregamento do site será carregado apenas informações básicas da música, como: nome do arquivo, data e duração. 
+        </li>
+        <li>
+            <code>preload='none'</code>: Só vai carregar a música quando o usuário clicar em reproduzir.
+        </li>
+    </ul>
+    <audio src="audio/scar tissue.mpeg" controls preload="metadata"></audio>
+
+    <h2>Forma mais completa</h2>
+    <p>Esta forma também utiliza a Tag &lt;audio&gt;, mas com a Tag &lt;source src=' ' type=' '&gt; dentro dela.</p>
+    <p>O parâmetro <code>'src'</code> é para colocar o arquivo da música e o parâmetro <code>'type'</code> é para colocar o tipo do arquivo!</p>
+    <p>Existem 3 tipos de arquivos para músicas: mpeg(mp3), wav, ogg.</p>
+
+    <audio preload="metadata" controls>
+        <source src="audio/scar tissue.mpeg" type="audio/mpeg">
+        <source src="audio/scar tissue.ogg" type="audio/ogg">
+        <source src="audio/scar tissue.wav" type="audio/wav"> <!--Arquivos wav são muito pesados, então deve ser a ultima opção-->
+    </audio>
+</body>
+</html>
