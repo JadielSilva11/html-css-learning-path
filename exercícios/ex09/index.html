@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>
+        É possível adaptar uma imagem dependendo do tamanho da tela do usuário, para isso é necessário ter a mesma imagem com tamanhos diferentes: pequeno, médio e grande.
+    </p>
+    <p>
+        As Tags utilizadas para a criação de imagens dinâmicas são: <br> A tag <strong>img</strong> com a imagem original (imagem grande) e a tag <strong>source:media:type</strong> dentro da tag <strong>picture</strong>.
+    </p>
+    <p>
+        A tag <abbr title="&lt;source media='(min-width: tamanho)' srcset='imagem menor' type='image/'&gt;">source:media:type</abbr> serve para dizer até qual tamanho a imagem original será carregada e qual imagem será carregada depois dela.
+    </p>
+    <p><strong>OBS:</strong> A tag source deve ser escrita em ordem. Por exemplo: a source que carrega uma imagem pequena deve estar acima da source de uma imagem maior!</p>
+    <p>
+        Para verificar a mudança de tamanho da imagem, diminua o tamanho do site ou abra em outros dispositivos!
+    </p>
+
+    <picture>
+        <source media="(max-width: 650px)" srcset="images/escudo-p.png" type="image/png">
+        <source media="(max-width: 1330px)" srcset="images/escudo-m.png" type="image/png">
+        <img src="images/escudo-g.png" alt="Imagem dinâmica">
+    </picture>
+</body>
+</html>
