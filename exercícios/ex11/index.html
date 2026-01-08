@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Vídeos hospedados localmente</h1>
+    <p>
+        Para adicionar vídeos em um site é utilizado a Tag &lt;video&gt; que
+        utilizada da mesma forma e com os mesmos parâmetros da Tag &lt;audio&gt;, como: <code>'controls'</code>.
+    </p>
+    <p>
+        É possível adicionar capas aos vídeos com o parâmetro <code>'poster='imagem''</code> dentro da Tag &lt;video&gt;!
+    </p>
+    <p>
+        O parâmetro <code>'loop'</code> faz o vídeo sempre se repetir uma vez que o usuário clica em reproduzir (Também serve para áudios)!
+    </p>
+
+    <video width="560" height="315" poster="images/capa.jpeg" controls loop>
+        <source src="videos/video.mp4" type="video/mp4">
+        <source src="videos/video.m4v" type="video/mp4">
+        <source src="videos/video.webm" type="video/webm">
+        <source src="videos/video.ogg" type="video/ogg">
+        <p>
+            Não foi possível carregar o vídeo <a href="videos/video.mp4">Clique aqui</a> para baixar!
+        </p> <!--Este parágrafo só aparece se nenhum dos formatos do vídeo for carregado-->
+    </video>
+
+    <p>
+        <strong>OBS:</strong> Sempre tenha o vídeo em todos os formatos de arquivos, para o vídeo poder ser carregado em qualquer navegador. Neste exemplo eu não tenho o vídeo em todos os formatos, mas eu deixei o código estruturado para receber o vídeo com todos os formatos possíveis.
+    </p>
+
+    <h1>Carregando vídeos externos</h1>
+    <p>
+        É possível carregar vídeos externos no seu site de forma bem rápida e simples.
+    </p>
+    <p>
+        Basta escolher algum vídeo, do YouTube por exemplo, e ao clicar em "compartilhar" você escolhe a opção <strong>incorporar</strong> e copia o código que aparecer lá e cola no código do seu site!
+    </p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=273utfXJVPtjESHB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p>
+        Desta forma o seu site economiza trabalho e recurso, pois o vídeo está hospedado no Youtube e não no seu site. 
+    </p>
+</body>
+</html>
