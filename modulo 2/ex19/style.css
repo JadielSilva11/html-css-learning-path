@@ -1,0 +1,25 @@
+#titulo{
+    text-align: center;
+    background-color: rgb(0, 238, 255);
+}
+
+.subtitulo{
+    background-color: green;
+    color: white;
+}
+
+.basico{
+    color: rgb(214, 200, 1);
+}
+
+.intermediario{
+    color: rgb(228, 121, 0);
+}
+
+.avancado{
+    color: red;
+}
+
+p{
+    text-align: justify;
+}
