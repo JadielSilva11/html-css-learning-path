@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasse :hover</title>
+    <style>
+        div{
+            width: 200px;
+        }
+
+        div:hover{
+            color: red;
+        }
+        
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{
+            color: white;
+            background-color: red;
+            display: block;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover com texto escondido</h1>
+    <p>Passe o mouse no texto abaixo</p>
+    <div>
+        <strong>Passe o mouse aqui</strong>
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Só isso o exemplo</p>
+</body>
+</html>

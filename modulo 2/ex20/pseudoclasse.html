@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+    <style>
+        div{
+            background-color: lightgray;
+            display: inline-block;
+            border: 1px solid black;
+            width: 200px; /* Largura */
+            height: 200px; /* Altura */
+            text-align: center;
+        }
+
+        #d1:hover{  /* Pseudo classe - Quando eu passar o mouse por cima a cor da div muda */
+            background-color: green;
+        }
+
+        #d2:hover{
+            background-color: yellow;
+        }
+
+        #d3:hover{
+            background-color: blue;
+        }
+
+        a{  /* Site da record tá dessa cor porque eu nunca visitei */
+            color: blue;
+        }
+
+        a:visited{    /* Site do ge tá dessa cor porque eu já visitei */
+            color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <hr>
+    <p>
+        <a href="https://www.r7.com/" target="_blank" rel="external">Site da Record</a>
+    </p>
+    <p>
+        <a href="https://ge.globo.com/" target="_blank" rel="external">Site do ge globo</a>
+    </p>
+</body>
+</html>
