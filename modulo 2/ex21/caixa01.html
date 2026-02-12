@@ -9,8 +9,13 @@
             width: 400px;
 
             /* Borda e espessura da borda */
-            border: solid;
             border-width: 5px;
+            border: solid;
+            border-color: blueviolet;
+
+            /* Shorthand para borda 
+                border: 5px solid blueviolet;
+            */
 
             /* Padding é o espaço entre o conteúdo e a borda da caixa */
             padding-left: 10px;
@@ -18,8 +23,26 @@
             padding-top: 10px;
             padding-bottom: 10px;
 
+            /* Shorthand para padding
+                padding: 10px; se as medidas forem iguais
+                padding: 10px 20px 30px 40px se as medidas forem diferentes
+            */
+
+
             /* Espaço ao redor da borda */
+            margin-top: 50px;
+            margin-right: 50px;
             margin-bottom: 50px;
+            margin-left: 50px;
+
+            /* Shorthand para margem
+                margin: 10px; se for tudo igual
+                margin: 20px auto 30px auto; se for diferente
+            */
+
+            /* Shorthand para outline
+                outline: 5px dashed blue;
+            */
         }
 
         a{
