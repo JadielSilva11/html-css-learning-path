@@ -1,0 +1,70 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+#titulo{
+    text-align: center;
+    background-color: rgb(184, 184, 184);
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+#links{
+    text-align: center;
+    background-color: purple;
+    margin: 0px;
+    padding: 5px;
+}
+
+#links > a{
+    margin: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+#links > a:hover{
+    text-decoration: underline;
+}
+
+#links > a:active{
+    color: rgb(0, 255, 0);
+}
+
+#ofertas{
+    text-align: center;
+    color: white;
+    background-color: brown;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.produtos{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+
+.item{
+    background-color: yellowgreen;
+    border: 5px solid aqua;
+    width: 250px;
+}
+
+.img{
+    height: 200px;
+    width: 200px;
+}
+
+#rodape{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
