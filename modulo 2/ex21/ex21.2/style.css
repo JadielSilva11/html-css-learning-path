@@ -55,6 +55,7 @@ main{
     border: 5px solid aqua;
     width: 250px;
     box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.356); 
+    border-radius: 20px 0px 20px 20px;
 }
 
 .img{
