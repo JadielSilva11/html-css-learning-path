@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagens de fundo</title>
+    <style>
+        .bloco{
+            display: inline-block;
+            margin-right: 40px;
+            height: 300px;
+            width: 300px;
+            border: solid 3px black;
+            border-radius: 10px;
+        }
+
+        #bloc1{
+            background-image: url('./images/pattern003.png');
+        }
+
+        #bloc2{
+            background-image: linear-gradient(to top, skyblue, darkblue)
+        }
+
+        #bloc3{
+            background-image: url('./images/wallpaper003.jpg')
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco" id="bloc1"></div>
+    <div class="bloco" id="bloc2"></div>
+    <div class="bloco" id="bloc3"></div>
+</body>
+</html>
