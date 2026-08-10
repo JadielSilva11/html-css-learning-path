@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizando elemento verticalmente</title>
+    <style>
+        main{
+            position: relative; /* 1 */
+            height: 95vh;
+            padding: 10px;
+            background: blue url('images/target001.png') center center no-repeat;
+            background-size: 100% 100%;
+        }
+        article{
+            position: absolute; /* 2 */
+            left: 50%; /* 3 */
+            top: 50%; /* 4 */
+            transform: translate(-50%, -50%); /* 5 */  
+            height: 400px;
+            width: 400px;
+            background: aliceblue url('images/target001.png') center center;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article></article>
+    </main>
+</body>
+</html>
